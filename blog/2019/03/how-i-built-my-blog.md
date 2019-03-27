@@ -13,13 +13,15 @@ Before I start detailing the steps I took to build this blog, I want to give a s
 
 I decided to use [VuePress](https://vuepress.vuejs.org) for my blog because I like [VueJS](https://vuejs.org) and I can have the content for my blog posts stored as markdown in a public Git repo.  
 
-I ultimately wanted to use Ghost, but the lack of having my posts stored in a public repo made my unhappy.  
+I ultimately wanted to use Ghost, but the lack of having my posts stored in a public repo made me unhappy.  
 
 VuePress is ideally used for technical documentation, and since my blog posts will be very technical, I feel that this is a great fit. I am aware that VuePress are working on enabling blogging support, so hopefully in the future, I'll gain native support for blogs as well. I'll also be blogging about VueJS quite a bit, so having a platform running on VueJS will be beneficial.  
 
 ### Installation 
 
-To get started with VuePress you'll need to have [Yarn](https://yarnpkg.com/en/) installed.
+To get started with VuePress you'll need to have [Yarn](https://yarnpkg.com/en/) installed.  
+
+After installing yarn, run the following command to install VuePress.
 
 ```
 yarn global add vuepress
