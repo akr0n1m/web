@@ -19,3 +19,7 @@ steps:
   inputs:
     azureSubscription: We Fix Code
     workingDirectory: .vuepress/dist
+    scriptLocation: inlineScript
+    inlineScript: |
+      az extension add --name webapp
+      az webapp up --name akr0n1m-web-eastus
