@@ -1,6 +1,6 @@
 module.exports = {
     title: 'akr0n1m',
-    description: 'some blog',
+    description: 'a place for blogs and articles',
     markdown: {
       // options for markdown-it-anchor
       anchor: { permalink: false },
@@ -12,8 +12,10 @@ module.exports = {
       }
     },
     themeConfig: {
+      logo: '/img/logo.png',
       sidebar: 'auto',
-      nav: [{ text: 'Home', link: '/' }]
+      repo: 'akr0n1m/web',
+      nav: [{ text: 'Home', link: '/' }],
     }
   };
   
