@@ -21,3 +21,4 @@ steps:
     WebAppType: Web App On Windows
     ConnectedServiceName: $(azureSubscriptionEndpoint)
     WebAppName: $(WebAppName)
+    Package: .vuepress/dist
