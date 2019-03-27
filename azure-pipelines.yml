@@ -9,6 +9,7 @@ trigger:
 pool:
   vmImage: 'Ubuntu-16.04'
 
+steps:
 - script: |
     npm install
     yarn install
