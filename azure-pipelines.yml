@@ -10,14 +10,15 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+    npm install
+    yarn install
+    yarn docs:build
 
-- script: npm install --only=dev
-- script: yarn install
-- script: yarn docs:build
+- task: AzureRMWebAppDeployment@4
+  displayName: Azure App Service Deploy
+  inputs:
+    WebAppType: Web App On Windows
+    ConnectedServiceName: $(azureSubscriptionEndpoint)
+    WebAppName: $(WebAppName)
+    Package: .vuepress/dist
