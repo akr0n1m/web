@@ -21,3 +21,8 @@ steps:
 - script: npm install --only=dev
 - script: yarn install
 - script: yarn docs:build
+
+- task: PublishSymbols@2
+  inputs:
+    searchPattern: '.vuepress/dist' 
+    detailedLog: true # Optional
