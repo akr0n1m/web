@@ -16,9 +16,5 @@ pool:
 
 - task: AzureCLI@1
   inputs:
-    azureSubscription: btwebb_msdn
+    azureSubscription: We Fix Code
     workingDirectory: .vuepress/dist
-    scriptLocation: inlineScript
-    inlineScript: |
-      az extension add --name webapp
-      az webapp up --location eastus2 --name hello-vuepress
