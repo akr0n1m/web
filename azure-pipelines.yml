@@ -22,4 +22,4 @@ steps:
     scriptLocation: inlineScript
     inlineScript: |
       az extension add --name webapp
-      az webapp up --name akr0n1m-web-useast
+      az webapp up --name akr0n1m-web-useast --location eastus
