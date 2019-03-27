@@ -15,11 +15,9 @@ steps:
     yarn install
     yarn docs:build
 
-- task: AzureCLI@1
+- task: AzureRMWebAppDeployment@4
+  displayName: Azure App Service Deploy
   inputs:
-    azureSubscription: We Fix Code
-    workingDirectory: .vuepress/dist
-    scriptLocation: inlineScript
-    inlineScript: |
-      az extension add --name webapp
-      az webapp up --name akr0n1m-web-useast --location eastus
+    WebAppType: Web App On Windows
+    ConnectedServiceName: $(azureSubscriptionEndpoint)
+    WebAppName: $(WebAppName)
