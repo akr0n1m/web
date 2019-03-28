@@ -17,6 +17,11 @@ module.exports = {
 
       repo: 'akr0n1m/web',
       editLinks: true,
+      lastUpdated: 'Last Updated',
+
+      serviceWorker: {
+        updatePopup: true
+      },
 
       nav: [{ text: 'Home', link: '/' }],
     }
