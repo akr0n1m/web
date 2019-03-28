@@ -17,25 +17,25 @@ hours, I had to run out to a client while I was fiddling with this.
 
 I decided to use [VuePress](https://vuepress.vuejs.org) for my blog because I
 like [VueJS](https://vuejs.org) and I can have the content for my blog posts
-stored as markdown in a public Git repo.  
+stored as markdown in a public Git repo.
 
 I ultimately wanted to use Ghost, but the lack of having my posts stored in a
-public repo made me unhappy.  
+public repo made me unhappy.
 
 VuePress is ideally used for technical documentation, and since my blog posts
 will be very technical, I feel that this is a great fit. I am aware that
 VuePress are working on enabling blogging support, so hopefully in the future,
 I'll gain native support for blogs as well. I'll also be blogging about VueJS
-quite a bit, so having a platform running on VueJS will be beneficial.  
+quite a bit, so having a platform running on VueJS will be beneficial.
 
 ### Installation
 
 To get started with VuePress you'll need to have [Yarn](https://yarnpkg.com/en/)
-installed.  
+installed.
 
 After installing yarn, run the following command to install VuePress.
 
-``` bash
+```bash
 yarn global add vuepress
 ```
 
@@ -53,12 +53,12 @@ index.html file during the compilation process.
 Once you have one or more markdown files, you can run the development copy of
 VuePress.
 
-``` bash
+```bash
 vuepress dev
 ```
 
 You can now connect to the development copy of VuePress running on your
-computer. The default url is ```http://localhost:8080```
+computer. The default url is `http://localhost:8080`
 
 ::: tip
 During development, VuePress runs WebPack and the WebPack dev server to enable
@@ -70,7 +70,7 @@ JavaScript files along with your static files.
 ## Azure DevOps
 
 I am a big fan of Azure DevOps to both build and release software. I usually
-use the Git repo in Azure DevOps.  
+use the Git repo in Azure DevOps.
 
 For the purpose of my blog, I decided to use GitHub as the public repo where I
 host my raw markdown files. I also want to use the GitHub issue system for
@@ -81,29 +81,29 @@ have been pushing YAML based build scripts for the last year, which annoys me,
 since I really like the visual builder. I decided to struggle through learning
 how to work the YAML way for this blog.
 
-It took some time, below is my final YAML file, but feel free to view the 
+It took some time, below is my final YAML file, but feel free to view the
 [history](https://github.com/akr0n1m/web/commits/master/azure-pipelines.yml) of
 this file to see some of my struggles.
 
-``` yaml
+```yaml
 trigger:
-- master
+  - master
 
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: "Ubuntu-16.04"
 
 steps:
-- script: |
-    yarn install
-    yarn docs:build
+  - script: |
+      yarn install
+      yarn docs:build
 
-- task: AzureRMWebAppDeployment@4
-  displayName: Azure App Service Deploy
-  inputs:
-    WebAppType: Web App On Windows
-    ConnectedServiceName: $(azureSubscriptionEndpoint)
-    WebAppName: $(WebAppName)
-    Package: .vuepress/dist
+  - task: AzureRMWebAppDeployment@4
+    displayName: Azure App Service Deploy
+    inputs:
+      WebAppType: Web App On Windows
+      ConnectedServiceName: $(azureSubscriptionEndpoint)
+      WebAppName: $(WebAppName)
+      Package: .vuepress/dist
 ```
 
 ## Conclusion
@@ -111,3 +111,6 @@ steps:
 This was a real rough first post, I will add some more posts to expand into each
 topic, such as advanced VuePress configurations and Azure DevOps in future
 posts. I hope you found this useful.
+
+<utterances />
+<tweet />

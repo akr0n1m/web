@@ -7459,6 +7459,11 @@ utila@^0.4.0, utila@~0.4:
   resolved "https://registry.yarnpkg.com/utila/-/utila-0.4.0.tgz#8a16a05d445657a3aea5eecc5b12a4fa5379772c"
   integrity sha1-ihagXURWV6Oupe7MWxKk+lN5dyw=
 
+utterances-npmjs@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/utterances-npmjs/-/utterances-npmjs-0.5.3.tgz#ae87315454f5d1aa5c651283321e46e653c12bde"
+  integrity sha512-FEgwb2Xe5rTg7/bCF5nZUblFoTeauxKAVggFLHMSKyIABqI0tpEeF+L7Y39PBnCN+Ht/ze5LqEXTseiikVZXKg==
+
 uuid@^3.1.0, uuid@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
