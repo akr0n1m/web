@@ -1,0 +1,22 @@
+{
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#d78822",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#91eec5",
+        "activityBarBadge.foreground": "#15202b",
+        "titleBar.activeBackground": "#ab6c1b",
+        "titleBar.inactiveBackground": "#ab6c1b99",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveForeground": "#e7e7e799",
+        "statusBar.background": "#ab6c1b",
+        "statusBarItem.hoverBackground": "#d78822",
+        "statusBar.foreground": "#e7e7e7",
+
+        "editorRuler.foreground": "#d78822"
+    },
+}

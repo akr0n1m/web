@@ -14,7 +14,10 @@ module.exports = {
     themeConfig: {
       logo: '/img/logo.png',
       sidebar: 'auto',
+
       repo: 'akr0n1m/web',
+      editLinks: true,
+
       nav: [{ text: 'Home', link: '/' }],
     }
   };
